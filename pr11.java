@@ -1,14 +1,19 @@
-public class shape {
-    void area(float l, float b){
-        System.out.println("\nAREA OF RECTANGLE = "+l*b);
+public class pr11 {
+    void area(float w, float h){
+        System.out.println("\nAREA OF RECTANGLE = "+w*h);
     }
 
-    void area(int ar){
-        System.out.println("AREA OF RECTANGLE = "+3.14*ar*ar+"\n");
+    void area(Double r){
+        System.out.println("AREA OF CIRCLE    = "+3.14*r*r);
+    }
+
+    void area(int l){
+        System.out.println("AREA OF SQUARE    = "+l*l+"\n");
     }
     public static void main(String a[]) {
-        shape s = new shape();
+        pr11 s = new pr11();
         s.area(11, 26);
-        s.area(11);
+        s.area(11.0);
+        s.area(6);
     }
 }
